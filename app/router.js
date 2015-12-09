@@ -6,9 +6,9 @@ const Router = Ember.Router.extend({
 })
 
 Router.map(function () {
-  this.route('ingredients');
-  this.route('concoction-types');
-  this.route('recipes');
+  this.route('ingredients')
+  this.route('concoction-types')
+  this.route('recipes')
 })
 
 export default Router
