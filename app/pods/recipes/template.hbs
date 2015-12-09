@@ -1,1 +1,14 @@
+<h2>Recipes</h2>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+{{#each model as |recipe|}}
+  <tr>
+    <td>{{recipe.title}}</td>
+  </tr>
+{{/each}}
+</table>
+
 {{outlet}}
