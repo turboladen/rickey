@@ -1,14 +1,16 @@
-<h2>Recipes</h2>
+<div class="col-md-12">
+  <h2>Recipes</h2>
 
-<table>
-  <tr>
-    <th>Title</th>
-  </tr>
-{{#each model as |recipe|}}
-  <tr>
-    <td>{{recipe.title}}</td>
-  </tr>
-{{/each}}
-</table>
+  <table>
+    <tr>
+      <th>Title</th>
+    </tr>
+    {{#each model as |recipe|}}
+      <tr>
+        <td>{{#link-to "recipe" recipe}}{{recipe.title}}{{/link-to}}</td>
+        </tr>
+      {{/each}}
+  </table>
 
-{{outlet}}
+  {{outlet}}
+</div>

@@ -8,5 +8,6 @@ export default DS.Model.extend({
   yieldsUnit: DS.attr('string'),
   createdAt: DS.attr('date'),
   updatedAt: DS.attr('date'),
-  concoctionType: DS.belongsTo('concoction-type')
+
+  concoctionType: DS.belongsTo('concoction-type', { async: false })
 })
