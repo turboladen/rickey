@@ -1,0 +1,22 @@
+<div class="col-md-12">
+  <h2>Concoctions</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Created</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model as |concoction|}}
+      <tr>
+        <td>{{#link-to "concoction" concoction}}{{concoction.name}}{{/link-to}}</td>
+        <td>{{concoction.createdAt}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+
+{{outlet}}

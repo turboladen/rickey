@@ -1,0 +1,12 @@
+<div class="col-md-12">
+  <h3>{{model.name}}</h3>
+
+  <div class="blog-post-meta">
+    <p>Created at: <time>{{model.createdAt}}</time></p>
+    <p>Updated at: <time>{{model.updatedAt}}</time></p>
+  </div>
+
+  <b>Recipe:</b> {{#link-to "recipe" model.recipe}}click me{{/link-to}}
+</div>
+
+{{outlet}}
