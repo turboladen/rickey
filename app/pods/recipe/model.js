@@ -9,7 +9,7 @@ export default DS.Model.extend({
   createdAt: DS.attr('date'),
   updatedAt: DS.attr('date'),
 
-  concoctionType: DS.belongsTo('concoction-type', { async: false }),
-  ingredients: DS.hasMany('ingredients', { async: false }),
-  needsIngredients: DS.hasMany('needs-ingredients', { async: false })
+  concoctionType: DS.belongsTo('concoction-type'),
+  ingredients: DS.hasMany('ingredients'),
+  needsIngredients: DS.hasMany('needs-ingredients')
 })
