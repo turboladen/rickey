@@ -1,0 +1,30 @@
+<div class="col-md-8">
+  <h1>New Recipe</h1>
+  <form>
+    <div class="form-group">
+      <label for="new-recipe-title">Title</label>
+      {{input value=title class="form-control" id="new-recipe-title"}}
+    </div>
+
+    <div class="form-group">
+      <label for="new-recipe-description">Description</label>
+      {{textarea value=description class="form-control" id="new-recipe-description"}}
+    </div>
+
+    <div class="form-group">
+      <label for="new-recipe-directions">Directions</label>
+      {{textarea value=directions class="form-control" id="new-recipe-directions"}}
+    </div>
+
+    <div class="form-group">
+      <label for="new-recipe-yields">Yields</label>
+      {{input value=yields class="form-control" id="new-recipe-yields"}}
+    </div>
+
+    <div class="form-group">
+      <label for="new-recipe-yields-unit">Units</label>
+      {{input value=yieldsUnit class="form-control" id="new-recipe-yields-unit"}}
+    </div>
+    <button class="btn" {{action 'createRecipe'}}>Create</button>
+  </form>
+</div>
