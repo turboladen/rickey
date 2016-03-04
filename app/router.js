@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('needs-ingredients')
   this.route('concoctions')
   this.route('concoction', { path: '/concoctions/:concoction_id' })
+  this.route('concoction-type')
 })
 
 export default Router

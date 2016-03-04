@@ -4,6 +4,7 @@
     "window",
     "-Promise"
   ],
+  "asi": true,
   "browser": true,
   "boss": true,
   "curly": true,
@@ -13,6 +14,7 @@
   "evil": true,
   "forin": false,
   "immed": false,
+  "lastsemic": true,
   "laxbreak": false,
   "newcap": true,
   "noarg": true,
